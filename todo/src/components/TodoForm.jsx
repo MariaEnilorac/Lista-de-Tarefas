@@ -2,7 +2,11 @@ import { useState } from 'react'
 
 export const TodoForm = () => {
     const {value, setValue} = useState("");
-    const {c}
+    const {category, setCategory} =useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
 
   return (
     <div className="todo-form">
