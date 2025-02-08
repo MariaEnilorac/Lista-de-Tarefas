@@ -25,17 +25,28 @@ function App() {
     },
   ]);
 
+  const addTodo = (text, category) => {
+    const newTodo = {
+      id: Math.floor(Math.random() * 1000), 
+      text,
+      category,
+      isCompleted: false,
+    };
+
+    setTodos([...todos, newTodo]);
+  };
+  
+
   return (
     <div className="app">
       <h1>Lista de Tarefas</h1>
       <div className="todo-list">
         {todos.map((todo) => (
-          <div key={todo.id} className="todo">
-           <Todo todo={todo} />
-          </div>
+           <Todo key={todo.id} todo={todo} />
         ))}
       </div>
-      <TodoForm />
+      <TodoForm addTodo={addTodo} />
+
     </div>
   );
 }
