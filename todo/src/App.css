@@ -46,3 +46,23 @@ button {
 button:hover {
   opacity: 1;
 }
+
+.complete {
+  background-color: rgb(10, 213, 10);
+}
+
+.remove {
+  background-color: rgb(206, 18, 18);
+}
+
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+
+input, select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%;
+}

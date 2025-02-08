@@ -1,6 +1,9 @@
-import React from 'react'
+import { useState } from 'react'
 
 export const TodoForm = () => {
+    const {value, setValue} = useState("");
+    const {c}
+
   return (
     <div className="todo-form">
         <h2>Criar tarefa:</h2>
