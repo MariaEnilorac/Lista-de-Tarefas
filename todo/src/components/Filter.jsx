@@ -1,7 +1,7 @@
 export const Filter = ({filter, setFilter, setSort }) => {
   return (
     <div className="filter">
-        <h2>Filtar:</h2>
+        <h2>Filtrar:</h2>
         <div className="filter=options">
         <p>Status:</p>
         <select value={filter} onChange={(e) => setFilter(e.target.value)}>
